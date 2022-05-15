@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/logo-colored.png" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Valesh Gopal</title>
   </head>
   <body>
+    <div id="particles-js"></div>
+    <img src="images/developer_male.png" class="hero-img" />
     <main class="container">
       <nav class="nav">
         <a href="#">
-          <img src="images/logo.png" alt="logo" class="logo" />
+          <img src="images/logo-colored.png" alt="logo" class="logo" />
         </a>
         <div></div>
         <ul class="nav-links">
@@ -21,32 +27,54 @@
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Blog</a></li>
           <li>
-            <button href="#" class="btn hire-me">Hire Me <span>/></span></button>
+            <button href="#" class="btn hire-me">
+              Hire Me <span>/></span>
+            </button>
           </li>
         </ul>
       </nav>
 
       <section class="section-hero">
-        <p class="intro">Hello, 👋 I am <span class="intro-line"></span></p>
-        <p class="name">
-          Valesh Gopal<br>
-          <span class="job"><span>< </span>Frontend developer</span> /></span>
-        </p>
-        <p class="about">I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-        </p>
-        <p class="about">
-          I'm open to learning, adapt to work with the team, freelance opportunities, contract jobs and use skills to solve complex UI challenges and provide value to the growth of an organization.
-        </p>
+        <div class="intro-section">
+          <p class="intro">Hello, 👋 I am <span class="intro-line"></span></p>
+          <p class="name">Valesh Gopal</p>
+          <div class="jobs">
+            <span>Frontend developer</span>
+            <span>Blockchain developer</span>
+            <span>UI designer</span>
+            <span>Frontend developer</span>
+          </div>
+        </div>
+        <article class="about">
+          I'm a front-end developer located in India. I love to create simple
+          yet beautiful websites with great user experience.
+        </article>
+        <article class="about">
+          I'm open to learning, adapt to work with the team, freelance
+          opportunities, contract jobs and use skills to solve complex UI
+          challenges and provide value to the growth of an organization.
+        </article>
+        <button href="#" class="btn-secondary">Download resume</button>
         <button href="#" class="btn hero-cta">See my projects</button>
         <div class="social-links">
-          <div class="social-line"></div> 
-          <a href="https://github.com/valeshgopal" target="_blank"><i class='bx bxl-github'></i></a>
-          <a href="https://linkedin.com/valeshgopal" target="_blank"> <i class='bx bxl-linkedin-square'></i></a>
-          <a href="https://behance.net/valeshg" target="_blank"><i class='bx bxl-behance'></i></a>
-          <a href="https://twitter.com/valeshdev" target="_blank"><i class='bx bxl-twitter'></i></a>
-          <div class="social-line"></div>        
+          <div class="social-line"></div>
+          <a href="https://github.com/valeshgopal" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/valeshgopal" target="_blank">
+            <i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://behance.net/valeshg" target="_blank"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="https://twitter.com/valeshdev" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <div class="social-line"></div>
         </div>
       </section>
     </main>
   </body>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
 </html>
