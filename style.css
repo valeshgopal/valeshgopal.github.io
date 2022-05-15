@@ -270,7 +270,7 @@ body {
 }
 
 .social-links i:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 .social-line {
@@ -289,14 +289,12 @@ body {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 
 .about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* outline: 2px solid red; */
 }
 
 .about-text {
@@ -319,26 +317,91 @@ body {
 .myskills-icons i,
 .myskills-icons img {
   font-size: 8rem;
-  margin-right: 2rem;
-  text-align: center;
 }
 
 .myskills-icons > div {
-  margin-bottom: 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.icons-container {
+.myskills-icons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* outline: 2px solid red; */
+  gap: 4rem;
 }
 
 .rocket {
-  width: 250px;
-  /* transform: rotate(-45deg); */
+  width: 16rem;
   animation: float 4s infinite;
+  z-index: -1;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.tooltip {
+  background-color: #ffb703;
+  color: #011a45;
+  padding: 0.25em 0.75em;
+  border-radius: 5px;
+  position: absolute;
+  top: -33%;
+  left: 25%;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: all 0.2s ease;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ffb703;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-radius: 5px;
+  left: 50%;
+  top: 95%;
+  transform: translateX(-50%);
+}
+
+.icon-container:hover > .tooltip {
+  transform: scale(1);
+}
+
+.js-tooltip {
+  left: 9%;
+}
+
+.node-tooltip {
+  top: 0;
+  left: 15%;
+}
+
+.sass-tooltip {
+  top: -25%;
+}
+
+.express-tooltip {
+  top: 0;
+  left: 12%;
+}
+
+.solidity-tooltip {
+  left: 10%;
+  top: -42%;
+}
+
+.mongo-tooltip {
+  left: 10%;
+  top: -33%;
+}
+
+.ps-tooltip {
+  left: 7.5%;
 }
