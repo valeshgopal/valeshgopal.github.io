@@ -133,12 +133,12 @@ body {
 }
 
 .name,
-.about,
+.hero-text,
 .hero-cta {
   margin-top: 2rem;
 }
 
-.about {
+.hero-text {
   width: 60vw;
 }
 
@@ -278,3 +278,32 @@ body {
   height: 40px;
   background-color: var(--secondary-color);
 }
+
+/* ABOUT */
+.about {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.section-heading {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* outline: 2px solid red; */
+}
+
+.about-text {
+  margin-top: -3rem;
+}
+.about-text p {
+  margin: 2rem 3rem;
+}
+
+/* MY SKILLS */
