@@ -91,13 +91,13 @@ body {
 
 .nav-links li a::after {
   content: "";
-  width: 100%;
+  width: 90%;
   transform: scaleX(0);
   height: 2px;
   background-color: var(--secondary-color);
   position: absolute;
   bottom: -4px;
-  left: 0;
+  left: 6.25%;
   margin: 0 auto;
   display: block;
   transition: all 0.5s ease;
@@ -461,4 +461,8 @@ body {
 
 .project-2 {
   flex-direction: row-reverse;
+}
+
+.project-2 .project-img {
+  box-shadow: 10px 10px 0 var(--secondary-color);
 }
