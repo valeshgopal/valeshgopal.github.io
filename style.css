@@ -498,6 +498,15 @@ body {
   color: var(--primary-color);
 }
 
+.addl-project > img {
+  box-sizing: content-box;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  width: 1.1rem;
+  padding: 1.15rem 1.5rem;
+  margin-top: -4rem;
+}
+
 .project-footer {
   display: flex;
   justify-content: space-between;
