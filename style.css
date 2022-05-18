@@ -97,7 +97,7 @@ body {
   background-color: var(--secondary-color);
   position: absolute;
   bottom: -4px;
-  left: 6.25%;
+  left: 5%;
   margin: 0 auto;
   display: block;
   transition: all 0.5s ease;
@@ -345,9 +345,21 @@ body {
 }
 
 .rocket {
-  width: 16rem;
-  animation: float 4s infinite;
+  margin-right: 6rem;
+  width: 20rem;
   z-index: -1;
+  /* transform: rotate(-45deg); */
+  animation: diagonalfloat 3s ease-in-out infinite alternate;
+}
+
+@keyframes diagonalfloat {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+  }
+
+  100% {
+    transform: translateX(1rem) translateY(1rem) rotate(-45deg);
+  }
 }
 
 .icon-container {
@@ -397,6 +409,10 @@ body {
 
 .sass-tooltip {
   top: -25%;
+}
+
+.tailwind-tooltip {
+  top: -12.5%;
 }
 
 .express-tooltip {
@@ -480,19 +496,19 @@ body {
 
 .addl-project {
   border: 1px solid var(--secondary-color);
-  border-radius: 0.5rem;
-  border-top-right-radius: 3.5rem;
-  padding: 2rem 1.5rem;
+  border-radius: 9px;
+  border-top-right-radius: 56px;
+  padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .addl-project > i {
   align-self: flex-start;
   font-size: 2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  padding: 16px;
+  border-radius: 8px;
   background-color: var(--secondary-color);
   margin-top: -4rem;
   color: var(--primary-color);
