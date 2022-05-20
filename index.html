@@ -83,7 +83,7 @@
       <section class="about" id="about">
         <h3 class="section-heading">About me</h3>
         <div class="about-content">
-          <img src="images/coder.gif" style="width: 31.25rem" />
+          <img src="images/coder.gif" />
           <div class="about-text">
             <p>
               Hello! My name is Valesh, a self-taught frontend and blockchain
@@ -528,14 +528,12 @@
           possible.
         </p>
         <div class="form">
-          <form>
-            <input type="text" placeholder="Name" class="msg-box" />
-            <input type="email" placeholder="Email" class="msg-box" />
-            <textarea placeholder="Message"></textarea>
+          <form action="">
+            <input type="text" placeholder="Name" class="msg-box" required />
+            <input type="email" placeholder="Email" class="msg-box" required />
+            <textarea placeholder="Message" required></textarea>
+            <input type="submit" class="btn send-msg" value="Send Message />" />
           </form>
-          <button type="submit" class="btn send-msg">
-            Send <span>/></span>
-          </button>
         </div>
       </section>
     </main>

@@ -339,6 +339,9 @@ a:active {
   justify-content: space-between;
 }
 
+.about-content img {
+  width: 28rem;
+}
 .about-text {
   margin-top: -3rem;
 }
@@ -453,8 +456,8 @@ a:active {
 }
 
 .solidity-tooltip {
-  left: 10%;
-  top: -42%;
+  left: 20%;
+  top: -35%;
 }
 
 .mongo-tooltip {
