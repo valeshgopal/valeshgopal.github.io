@@ -97,6 +97,12 @@ a:active {
   align-items: center;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-links li {
   display: inline-block;
   position: relative;
@@ -127,20 +133,23 @@ a:active {
   transform: scaleX(1);
 }
 
-.btn {
+.nav .btn,
+.section-hero .btn,
+.form .btn {
   background-image: var(--button-gradient);
   padding: 0.5rem 1rem;
   border: 0;
   font-family: inherit;
+  color: var(--primary-color);
   border-radius: 0.25rem;
   font-weight: 600;
   cursor: pointer;
-  color: var(--primary-color);
   height: 2.5rem;
+  transition: 0.2s;
 }
 
 .btn:hover {
-  box-shadow: 0 2px 7px 0px rgba(255, 247, 5, 0.25);
+  box-shadow: 0 5px 10px -2px rgba(255, 247, 5, 0.25);
 }
 
 /* Hero */
@@ -164,9 +173,12 @@ a:active {
 }
 
 .name,
-.hero-text,
-.hero-cta {
+.hero-text {
   margin-top: 2rem;
+}
+
+.hero-cta {
+  margin-top: 3rem;
 }
 
 .hero-text {
@@ -176,7 +188,6 @@ a:active {
 .jobs {
   height: 6rem;
   overflow: hidden;
-  /* outline: 2px solid red; */
 }
 
 .jobs span {
@@ -264,7 +275,7 @@ a:active {
 }
 
 .btn-secondary {
-  padding: 0.5rem 1rem;
+  padding: 0.38rem 1rem;
   border: 0;
   font-family: inherit;
   font-weight: 600;
@@ -495,6 +506,7 @@ a:active {
   padding: 0.25em 0.75em;
   border-radius: 2.5em;
   font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .project-2 {
@@ -597,6 +609,7 @@ a:active {
   border-radius: 0.25rem;
   align-self: flex-start;
   font-size: 0.85rem;
+  font-weight: 600;
   color: var(--primary-color);
   transition: 0.2s;
 }
@@ -708,5 +721,4 @@ textarea:focus {
 .footer-info img {
   width: 1.5rem;
   height: 1.5rem;
-  /* margin-top: 1rem; */
 }

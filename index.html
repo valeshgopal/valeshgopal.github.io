@@ -24,16 +24,15 @@
         <a href="#home">
           <img src="images/logo-colored.png" alt="logo" class="logo" />
         </a>
-        <div></div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li>
-            <button class="btn hire-me">Hire Me <span>/></span></button>
-          </li>
-        </ul>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+          <a href="#contact" class="btn hire-me">Hire Me <span>/></span></a>
+        </div>
       </nav>
 
       <section class="section-hero">
@@ -56,8 +55,13 @@
           opportunities, contract jobs and use skills to solve complex UI
           challenges and provide value to the growth of an organization.
         </article>
-        <button href="#" class="btn-secondary">Download resume</button>
-        <button href="#" class="btn hero-cta">See my projects</button>
+        <div class="hero-cta">
+          <a download href="files/Valesh's Resume.pdf" class="btn-secondary"
+            >Download resume</a
+          >
+          <a href="#portfolio" class="btn">See my projects</a>
+        </div>
+
         <div class="social-links">
           <div class="social-line"></div>
           <a href="https://github.com/valeshgopal" target="_blank"
@@ -529,7 +533,9 @@
             <input type="email" placeholder="Email" class="msg-box" />
             <textarea placeholder="Message"></textarea>
           </form>
-          <button href="#" class="btn send-msg">Send <span>/></span></button>
+          <button type="submit" class="btn send-msg">
+            Send <span>/></span>
+          </button>
         </div>
       </section>
     </main>
