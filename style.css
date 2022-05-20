@@ -343,11 +343,10 @@ a:active {
 }
 
 .myskills h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
-.myskills-icons i,
-.myskills-icons img {
+.myskills-icons i {
   font-size: 8rem;
 }
 
@@ -364,20 +363,23 @@ a:active {
   gap: 4rem;
 }
 
-.rocket {
-  margin-right: 6rem;
-  width: 20rem;
-  z-index: -1;
+.icon-container img {
+  width: 8rem;
+}
+
+.astronaut {
+  /* margin-right: 6rem; */
+  width: 540px;
   animation: diagonalfloat 3s ease-in-out infinite alternate;
 }
 
 @keyframes diagonalfloat {
   0% {
-    transform: translateX(0) translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(0deg);
   }
 
   100% {
-    transform: translateX(1rem) translateY(1rem) rotate(-45deg);
+    transform: translateY(1rem) rotate(0deg);
   }
 }
 
