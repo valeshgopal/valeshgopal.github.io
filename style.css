@@ -784,6 +784,10 @@ textarea:focus {
   .contact textarea {
     width: 81.5vw;
   }
+
+  .project .project-img {
+    box-shadow: -5px 5px 0 var(--secondary-color);
+  }
 }
 
 @media screen and (max-width: 644px) {
