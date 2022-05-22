@@ -78,6 +78,7 @@ a:active {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
+  margin-top: 1.5rem;
 }
 
 .nav-right {
@@ -369,13 +370,12 @@ a:active {
 }
 
 .myskills-icons {
-  max-width: 60vw;
+  max-width: 75vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 4rem 1rem;
-  outline: 2px solid red;
 }
 
 .icon-container img {
@@ -383,7 +383,6 @@ a:active {
 }
 
 .astronaut {
-  /* margin-right: 6rem; */
   width: 480px;
   animation: diagonalfloat 3s ease-in-out infinite alternate;
 }
@@ -400,6 +399,9 @@ a:active {
 
 .icon-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tooltip {
@@ -408,8 +410,7 @@ a:active {
   padding: 0.25em 0.75em;
   border-radius: 5px;
   position: absolute;
-  top: -33%;
-  left: 25%;
+  bottom: 110%;
   transform: scale(0);
   transform-origin: bottom;
   transition: all 0.2s ease;
@@ -432,42 +433,6 @@ a:active {
 
 .icon-container:hover > .tooltip {
   transform: scale(1);
-}
-
-.js-tooltip {
-  left: 9%;
-}
-
-.node-tooltip {
-  top: 0;
-  left: 15%;
-}
-
-.sass-tooltip {
-  top: -25%;
-}
-
-.tailwind-tooltip {
-  top: -12.5%;
-}
-
-.express-tooltip {
-  top: 0;
-  left: 12%;
-}
-
-.solidity-tooltip {
-  left: 20%;
-  top: -35%;
-}
-
-.mongo-tooltip {
-  left: 10%;
-  top: -33%;
-}
-
-.ps-tooltip {
-  left: 7.5%;
 }
 
 /* PORTFOLIO */
@@ -727,6 +692,7 @@ textarea:focus {
   height: 1.5rem;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .intro-section *:not(.intro) {
     font-size: 3.5rem;
@@ -734,15 +700,21 @@ textarea:focus {
   .jobs span {
     height: 5.5rem;
   }
+  .astronaut {
+    display: none;
+  }
+
+  .myskills-icons {
+    margin: 0 auto;
+    gap: 4rem 4rem;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1120px) {
   .hero-img {
     width: 32rem;
     height: 32rem;
-  }
-  .intro-section {
-    margin: 0 auto;
   }
 }
 
@@ -760,23 +732,28 @@ textarea:focus {
     width: 75vw;
   }
 
-  .icon-container img {
-    width: 10vw;
-  }
-
-  .myskills-icons {
-    margin: 0 auto;
-  }
-
   .myskills-icons i {
-    font-size: 10vw;
+    font-size: 5rem;
+  }
+
+  .icon-container img {
+    width: 5rem;
+  }
+
+  .tooltip {
+    font-size: 0.75rem;
   }
 
   .project {
     flex-direction: column;
   }
+
   .project-img {
     width: 82vw;
+  }
+
+  .project-2 .project-img {
+    box-shadow: -10px 10px 0 var(--secondary-color);
   }
 
   .msg-box {
@@ -785,5 +762,69 @@ textarea:focus {
 
   .contact textarea {
     width: 81.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-section *:not(.intro) {
+    font-size: 3rem;
+  }
+
+  .nav-links,
+  .nav .btn,
+  .social-links {
+    display: none;
+  }
+
+  .about-text {
+    width: 100vw;
+  }
+
+  .msg-box,
+  .contact textarea {
+    width: 81.5vw;
+  }
+}
+
+@media screen and (max-width: 644px) {
+  .intro-section *:not(.intro) {
+    font-size: 7vw;
+  }
+
+  .jobs {
+    height: 15vw;
+  }
+
+  .project-img {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+
+  .intro-section *:not(.intro) {
+    font-size: 5vw;
+  }
+
+  .jobs {
+    height: 10vw;
+  }
+
+  .project-img {
+    width: 75vw;
+  }
+
+  .hero-cta .btn {
+    display: none;
+  }
+
+  .about-content img {
+    width: 75vw;
+  }
+  .container {
+    padding: 1rem 2rem;
   }
 }
