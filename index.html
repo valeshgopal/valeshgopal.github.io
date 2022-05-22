@@ -18,23 +18,21 @@
   </head>
   <body>
     <div id="particles-js"></div>
-    <img src="images/developer_male.png" class="hero-img" />
+    <nav class="nav" id="home">
+      <a href="#home">
+        <img src="images/logo-colored.png" alt="logo" class="logo" />
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+        <a href="#contact" class="btn hire-me">Hire Me <span>/></span></a>
+      </div>
+    </nav>
     <main class="container">
-      <nav class="nav" id="home">
-        <a href="#home">
-          <img src="images/logo-colored.png" alt="logo" class="logo" />
-        </a>
-        <div class="nav-right">
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#blog">Blog</a></li>
-          </ul>
-          <a href="#contact" class="btn hire-me">Hire Me <span>/></span></a>
-        </div>
-      </nav>
-
       <section class="section-hero">
         <div class="intro-section">
           <p class="intro">Hello, 👋 I am <span class="intro-line"></span></p>
@@ -78,6 +76,7 @@
           ></a>
           <div class="social-line"></div>
         </div>
+        <img src="images/developer_male.png" class="hero-img" />
       </section>
 
       <section class="about" id="about">
@@ -108,70 +107,66 @@
         <h3 class="section-heading">My Skills</h3>
         <div class="myskills-content">
           <div class="myskills-icons">
-            <div>
-              <div class="icon-container">
-                <p class="tooltip">HTML</p>
-                <i class="devicon-html5-plain colored html-icon"></i>
-              </div>
-              <div class="icon-container">
-                <p class="tooltip">CSS</p>
-                <i class="devicon-css3-plain colored"></i>
-              </div>
-
-              <div class="icon-container">
-                <p class="tooltip js-tooltip">Javascript</p>
-
-                <i class="devicon-javascript-plain colored"></i>
-              </div>
-              <div class="icon-container">
-                <p class="tooltip js-tooltip">Typescript</p>
-
-                <i class="devicon-typescript-plain colored"></i>
-              </div>
+            <div class="icon-container">
+              <p class="tooltip">HTML</p>
+              <i class="devicon-html5-plain colored html-icon"></i>
             </div>
-            <div>
-              <div class="icon-container">
-                <p class="tooltip sass-tooltip">SASS</p>
-                <i class="devicon-sass-original colored"></i>
-              </div>
-              <div class="icon-container">
-                <p class="tooltip tailwind-tooltip">Tailwind</p>
-                <img src="images/Tailwind_CSS_Logo.svg" />
-              </div>
-              <div class="icon-container">
-                <p class="tooltip">React</p>
-                <i class="devicon-react-original colored"></i>
-              </div>
-              <div class="icon-container">
-                <p class="tooltip node-tooltip">Node JS</p>
-                <i class="devicon-nodejs-plain-wordmark colored"></i>
-              </div>
+            <div class="icon-container">
+              <p class="tooltip">CSS</p>
+              <i class="devicon-css3-plain colored"></i>
             </div>
-            <div>
-              <div class="icon-container">
-                <p class="tooltip express-tooltip">Express JS</p>
-                <i class="devicon-express-original-wordmark"></i>
-              </div>
-              <!-- <div class="icon-container">
-                <p class="tooltip mongo-tooltip">MongoDB</p>
-                <i class="devicon-mongodb-plain colored"></i>
-              </div> -->
-              <div class="icon-container">
-                <p class="tooltip solidity-tooltip">Solidity</p>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
-                />
-              </div>
-              <div class="icon-container">
-                <p class="tooltip">Figma</p>
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                />
-              </div>
-              <div class="icon-container">
-                <p class="tooltip ps-tooltip">Photoshop</p>
-                <i class="devicon-photoshop-plain colored"></i>
-              </div>
+
+            <div class="icon-container">
+              <p class="tooltip js-tooltip">Javascript</p>
+
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip js-tooltip">Typescript</p>
+
+              <i class="devicon-typescript-plain colored"></i>
+            </div>
+
+            <div class="icon-container">
+              <p class="tooltip sass-tooltip">SASS</p>
+              <i class="devicon-sass-original colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip tailwind-tooltip">Tailwind</p>
+              <img src="images/Tailwind_CSS_Logo.svg" />
+            </div>
+            <div class="icon-container">
+              <p class="tooltip">React</p>
+              <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="icon-container">
+              <p class="tooltip node-tooltip">Node JS</p>
+              <i class="devicon-nodejs-plain-wordmark colored"></i>
+            </div>
+
+            <div class="icon-container">
+              <p class="tooltip express-tooltip">Express JS</p>
+              <i class="devicon-express-original-wordmark"></i>
+            </div>
+            <!-- <div class="icon-container">
+              <p class="tooltip mongo-tooltip">MongoDB</p>
+              <i class="devicon-mongodb-plain colored"></i>
+            </div> -->
+            <div class="icon-container">
+              <p class="tooltip solidity-tooltip">Solidity</p>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
+              />
+            </div>
+            <div class="icon-container">
+              <p class="tooltip">Figma</p>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              />
+            </div>
+            <div class="icon-container">
+              <p class="tooltip ps-tooltip">Photoshop</p>
+              <i class="devicon-photoshop-plain colored"></i>
             </div>
           </div>
           <img src="images/astronaut-1.png" class="astronaut" />
