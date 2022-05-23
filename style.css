@@ -535,7 +535,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: no-wrap;
+  /* flex-wrap: no-wrap; */
   gap: 2rem;
   margin-bottom: 8rem;
 }
@@ -632,7 +632,7 @@ a:active {
 }
 
 .blog-post {
-  min-width: 350px;
+  min-width: 275px;
   background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 0.5rem;
@@ -714,6 +714,7 @@ textarea:focus {
 
 /* FOOTER */
 .footer {
+  min-width: 400px;
   position: relative;
 }
 
@@ -901,7 +902,7 @@ textarea:focus {
   }
 
   .intro-section *:not(.intro) {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 
   .jobs {
@@ -909,7 +910,7 @@ textarea:focus {
   }
 
   .project-img {
-    width: 75vw;
+    width: 88vw;
   }
 
   .hero-cta .btn {
@@ -921,5 +922,28 @@ textarea:focus {
   }
   .container {
     padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog-post {
+    margin-right: 1rem;
+  }
+
+  .addl-project {
+    min-width: 93vw;
+  }
+
+  .contact {
+    margin-left: 2.5rem;
+  }
+
+  .msg-box,
+  .contact textarea {
+    width: 90vw;
+  }
+
+  .project-img {
+    min-width: 95vw;
   }
 }
