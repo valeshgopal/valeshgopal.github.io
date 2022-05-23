@@ -207,7 +207,7 @@ a:active {
 
 .menu {
   position: absolute;
-  top: 10%;
+  top: 0;
   right: 0;
   /* transform: translateX(-50%); */
   display: flex;
