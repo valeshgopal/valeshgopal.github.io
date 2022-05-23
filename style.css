@@ -925,6 +925,10 @@ textarea:focus {
     padding: 1rem 2rem;
   }
 
+  .footer-info {
+    justify-content: flex-start;
+  }
+
   .footer-info p {
     font-size: 0.65rem;
   }
