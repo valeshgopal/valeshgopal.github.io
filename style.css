@@ -140,7 +140,7 @@ a:active {
   margin-top: 0;
   width: 100vw !important;
   position: fixed;
-  background-color: rgba(1, 26, 69, 1);
+  background-color: rgba(1, 26, 69, 0.98);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
@@ -403,6 +403,7 @@ a:active {
   position: fixed;
   top: 37.5%;
   right: 1.25rem;
+  z-index: 20;
 }
 
 .social-links i {
