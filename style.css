@@ -450,16 +450,16 @@ a:active {
 .project {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: no-wrap;
   gap: 2rem;
   margin-bottom: 8rem;
 }
 
 .project-img {
-  width: 40vw;
-  /* height: auto; */
-  /* object-fit: contain; */
+  width: 50vw;
   box-shadow: -10px 10px 0 var(--secondary-color);
+  border-radius: 5px;
 }
 
 .project-details {
@@ -746,6 +746,7 @@ textarea:focus {
 
   .project {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .project-img {
