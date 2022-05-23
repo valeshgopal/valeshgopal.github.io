@@ -375,7 +375,7 @@ a:active {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 4rem 1rem;
+  gap: 4rem 2rem;
 }
 
 .icon-container img {
@@ -383,7 +383,7 @@ a:active {
 }
 
 .astronaut {
-  width: 480px;
+  width: 510px;
   animation: diagonalfloat 3s ease-in-out infinite alternate;
 }
 
