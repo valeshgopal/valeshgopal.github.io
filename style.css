@@ -73,12 +73,15 @@ a:active {
   height: 3rem;
 }
 /* NAV BAR */
+.nav-container {
+  height: 6rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  margin-top: 1.5rem;
   position: relative;
 }
 
@@ -131,6 +134,15 @@ a:active {
   cursor: pointer;
   height: 2.5rem;
   transition: 0.2s;
+}
+
+.nav.sticky {
+  margin-top: 0;
+  width: 100vw !important;
+  position: fixed;
+  background-color: rgba(1, 26, 69, 1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 
 .btn:hover {
@@ -222,7 +234,7 @@ a:active {
 
 /* Hero */
 .section-hero {
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 .intro {
   display: flex;

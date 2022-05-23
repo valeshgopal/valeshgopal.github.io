@@ -1,8 +1,28 @@
 const btn = document.getElementById("menu-btn");
-const nav = document.getElementById("menu");
+const menu = document.getElementById("menu");
+const nav = document.querySelector(".nav");
+const hero = document.querySelector(".section-hero");
+const sectionAbout = document.querySelector(".about");
 
 btn.addEventListener("click", () => {
   btn.classList.toggle("open");
-  // nav.classList.toggle("flex");
-  nav.classList.toggle("hidden");
+  menu.classList.toggle("hidden");
 });
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+};
+
+const obsOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: "96px",
+};
+
+const heroObserver = new IntersectionObserver(stickyNav, obsOptions);
+heroObserver.observe(hero);
