@@ -61,6 +61,13 @@ body {
   gap: 2rem;
 }
 
+.mail-icon {
+  width: 10rem;
+}
+
+.container p {
+  margin-top: -2rem;
+}
 .btn {
   background-image: var(--button-gradient);
   padding: 0.5rem 1rem;
