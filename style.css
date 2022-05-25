@@ -385,7 +385,7 @@ a:active {
   color: var(--secondary-color);
   background: transparent;
   border: 2px solid var(--secondary-color);
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   height: 2.5rem;
   transition: all 0.3s ease;
 }
@@ -555,7 +555,7 @@ a:active {
 
 .project-img {
   width: 50vw;
-  box-shadow: -10px 10px 0 var(--secondary-color);
+  box-shadow: -10px 10px 0px var(--secondary-color);
   border-radius: 5px;
 }
 
