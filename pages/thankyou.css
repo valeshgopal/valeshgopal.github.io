@@ -68,6 +68,11 @@ body {
 
 .container p {
   margin-top: -2rem;
+  text-align: center;
+}
+
+.container h2 {
+  text-align: center;
 }
 
 .btn {
