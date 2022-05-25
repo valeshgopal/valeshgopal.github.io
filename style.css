@@ -931,6 +931,10 @@ textarea:focus {
     display: none;
   }
 
+  .btn-secondary {
+    margin-left: 0;
+  }
+
   .about-content img {
     width: 75vw;
   }
