@@ -138,6 +138,8 @@ a:active {
 
 .nav.sticky {
   margin-top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw !important;
   position: fixed;
   background-color: rgba(1, 26, 69, 0.98);
@@ -236,6 +238,7 @@ a:active {
 .section-hero {
   margin-top: 0rem;
 }
+
 .intro {
   display: flex;
   align-items: center;
@@ -554,7 +557,7 @@ a:active {
 }
 
 .project-img {
-  width: 50vw;
+  max-width: 720px;
   box-shadow: -10px 10px 0px var(--secondary-color);
   border-radius: 5px;
 }
@@ -699,7 +702,7 @@ a:active {
   background: transparent;
   color: #fff;
   font-family: inherit;
-  width: 29.5vw;
+  width: 25vw;
   margin-right: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -971,5 +974,33 @@ textarea:focus {
 
   .project-img {
     min-width: 95vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    max-width: 65%;
+  }
+
+  .nav {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .msg-box {
+    max-width: 400px;
+  }
+
+  .contact textarea {
+    max-width: 960px;
+  }
+
+  .social-links {
+    right: calc(50vw - 720px);
   }
 }
