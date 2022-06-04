@@ -191,7 +191,6 @@ a:active {
 
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
-  background-color: var(--primary-color);
 }
 
 .open .hamburger-middle {
@@ -200,7 +199,6 @@ a:active {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
-  background-color: var(--primary-color);
 }
 
 .menu.hidden {
@@ -209,9 +207,9 @@ a:active {
 
 .menu {
   position: absolute;
-  top: 0;
+  top: 5.3rem;
   right: 0;
-  /* transform: translateX(-50%); */
+  text-align: center;
   display: flex;
   gap: 2rem;
   flex-direction: column;
