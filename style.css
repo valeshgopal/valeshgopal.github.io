@@ -567,12 +567,6 @@ a:active {
   gap: 1rem;
 }
 
-.tags {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .tags span {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -636,6 +630,7 @@ a:active {
 .project-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .project-footer i {
