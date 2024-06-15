@@ -785,11 +785,25 @@ textarea:focus {
 .footer-info {
   background-color: #000d22;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 4rem;
   gap: 1rem;
   font-size: 12px;
+}
+
+.footer-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
 }
 
 .footer-info img {
@@ -948,8 +962,18 @@ textarea:focus {
     padding: 1rem 2rem;
   }
 
+  .ocean {
+    display: none;
+  }
+
   .footer-info {
     justify-content: flex-start;
+    height: 200px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-info p {
